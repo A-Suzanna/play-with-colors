@@ -1,6 +1,5 @@
 const button = document.getElementById("buttonChangeColor");
 const slider = document.querySelector("input[type='range']");
-const box = document.querySelector(".box");
 
 function randomColor() {
   const r = Math.floor(Math.random() * 256);
@@ -10,9 +9,6 @@ function randomColor() {
 }
 
 function changeColor() {
-  const color = randomColor();
-  box.style.backgroundColor = color;
-  slider.style.accentColor = color;
   document.body.style.backgroundColor = randomColor();
 }
 
